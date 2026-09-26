@@ -1,0 +1,471 @@
+/* =========================
+   BASIC PAGE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #2d5be3;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    background-color: #222;
+
+    padding: 12px;
+
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+h2 {
+    color: #2d5be3;
+
+    border-bottom: 2px solid #2d5be3;
+
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #333;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ARTICLES
+   ========================= */
+
+article {
+    margin: 25px 0;
+
+    padding: 18px;
+
+    border: 1px solid #ddd;
+
+    background-color: #fafafa;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #2d5be3;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #1f46bd;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+
+    padding: 10px;
+
+    text-align: left;
+}
+
+th {
+    background-color: #e7ecff;
+}
+
+
+/* =========================
+   LISTS
+   ========================= */
+
+ul {
+    line-height: 1.8;
+
+    list-style-type: square;
+}
+
+ol {
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CODE
+   ========================= */
+
+code {
+    background-color: #e8e8e8;
+
+    padding: 2px 5px;
+
+    font-family: monospace;
+}
+
+pre {
+    background-color: #222;
+
+    color: white;
+
+    padding: 15px;
+
+    overflow-x: auto;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    border: 1px solid #ccc;
+}
+
+
+/* =========================
+   BLOCK / INLINE EXAMPLE
+   ========================= */
+
+.example-box {
+    display: block;
+
+    background-color: #dce5ff;
+
+    border: 1px solid #777;
+
+    padding: 10px;
+
+    margin: 10px 0;
+}
+
+.highlight {
+    background-color: yellow;
+
+    padding: 2px;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
+    background-color: white;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 8px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid #aaa;
+
+    font-family: Arial, sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="color"],
+input[type="range"] {
+    width: auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+
+    padding: 9px 15px;
+
+    background-color: #2d5be3;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+input[type="reset"] {
+    background-color: #555;
+}
+
+
+/* =========================
+   IFRAME
+   ========================= */
+
+iframe {
+    border: 1px solid #999;
+
+    max-width: 100%;
+}
+
+
+/* =========================
+   VIDEO / AUDIO
+   ========================= */
+
+video {
+    max-width: 100%;
+
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CANVAS
+   ========================= */
+
+canvas {
+    border: 1px solid #555;
+
+    background-color: white;
+
+    max-width: 100%;
+}
+
+
+/* =========================
+   BOX MODEL
+   ========================= */
+
+.box-model {
+    background-color: #eee;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    text-align: center;
+}
+
+.box-border {
+    border: 8px solid #555;
+
+    padding: 15px;
+
+    background-color: #ddd;
+}
+
+.box-padding {
+    border: 5px solid #777;
+
+    padding: 20px;
+
+    background-color: #f0f0f0;
+}
+
+.box-content {
+    background-color: white;
+
+    border: 1px solid #222;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 7px;
+    }
+
+    .container {
+        width: 95%;
+
+        padding: 15px;
+    }
+
+    article {
+        padding: 12px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+}

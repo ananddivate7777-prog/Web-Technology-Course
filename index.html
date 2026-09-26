@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology Course</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>Web Technology</h1>
+
+        <p>HTML and CSS Study Course</p>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#unit1">Unit 1</a>
+        <a href="#unit2">Unit 2</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#examples">Examples</a>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="container">
+
+        <h2>Web Technology Course</h2>
+
+        <p>
+            This course covers the fundamentals of the Internet and Web,
+            HTML, HTML5, forms, CSS, selectors and the CSS box model.
+        </p>
+
+        <h3>Course Units</h3>
+
+        <ul>
+            <li>Unit 1 - Web Fundamentals and HTML</li>
+            <li>Unit 2 - CSS Core and Box Model</li>
+        </ul>
+
+        <a class="button" href="#unit1">Start Learning</a>
+
+    </section>
+
+
+    <!-- ================= UNIT 1 ================= -->
+
+    <section id="unit1" class="container">
+
+        <h2>Unit 1 - Web Fundamentals and HTML</h2>
+
+
+        <!-- Internet vs Web -->
+
+        <article>
+
+            <h3>1. Internet vs Web</h3>
+
+            <p>
+                The Internet is a global network of connected computers
+                and devices. The Web is a service that runs on the Internet
+                and allows users to access websites and web pages.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th>Internet</th>
+                    <th>Web</th>
+                </tr>
+
+                <tr>
+                    <td>Global network of computers</td>
+                    <td>Service running on the Internet</td>
+                </tr>
+
+                <tr>
+                    <td>Uses many protocols</td>
+                    <td>Mainly uses HTTP and HTTPS</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- Static Dynamic -->
+
+        <article>
+
+            <h3>2. Static vs Dynamic Websites</h3>
+
+            <table>
+
+                <tr>
+                    <th>Static Website</th>
+                    <th>Dynamic Website</th>
+                </tr>
+
+                <tr>
+                    <td>Content is mostly fixed</td>
+                    <td>Content can change dynamically</td>
+                </tr>
+
+                <tr>
+                    <td>Usually uses HTML and CSS</td>
+                    <td>Can use server-side programming and databases</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- HTTP HTTPS TCP -->
+
+        <article>
+
+            <h3>3. HTTP, HTTPS and TCP</h3>
+
+            <p>
+                <strong>HTTP</strong> stands for HyperText Transfer Protocol.
+                It is used for communication between a browser and a web server.
+            </p>
+
+            <p>
+                <strong>HTTPS</strong> is the secure version of HTTP.
+                It encrypts communication between the browser and server.
+            </p>
+
+            <p>
+                <strong>TCP</strong> stands for Transmission Control Protocol.
+                It provides reliable communication between devices over a network.
+            </p>
+
+        </article>
+
+
+        <!-- Client Server -->
+
+        <article>
+
+            <h3>4. Client-Side and Server-Side Scripting</h3>
+
+            <p>
+                Client-side scripting runs in the user's browser.
+                JavaScript is a common example.
+            </p>
+
+            <p>
+                Server-side scripting runs on the web server and can
+                process requests, databases and other server operations.
+            </p>
+
+        </article>
+
+
+        <!-- URLs -->
+
+        <article>
+
+            <h3>5. Absolute and Relative URLs</h3>
+
+            <p>
+                An absolute URL contains the complete web address.
+            </p>
+
+            <p>
+                Example:
+                <code>https://www.example.com/about.html</code>
+            </p>
+
+            <p>
+                A relative URL points to a resource relative to the
+                current page.
+            </p>
+
+            <p>
+                Example:
+                <code>about.html</code>
+            </p>
+
+        </article>
+
+
+        <!-- HTML Structure -->
+
+        <article id="html">
+
+            <h3>6. Complete HTML Structure</h3>
+
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+            </pre>
+
+        </article>
+
+
+        <!-- Formatting -->
+
+        <article>
+
+            <h3>7. HTML Text Formatting</h3>
+
+            <p>
+                <strong>Bold text</strong>
+            </p>
+
+            <p>
+                <em>Important or emphasized text</em>
+            </p>
+
+            <p>
+                <b>Bold using b</b>,
+                <i>italic using i</i>,
+                <u>underlined text</u>,
+                <mark>highlighted text</mark>
+            </p>
+
+        </article>
+
+
+        <!-- Quotation Definition -->
+
+        <article>
+
+            <h3>8. Quotation and Definition Tags</h3>
+
+            <blockquote>
+                HTML is used to structure content on the Web.
+            </blockquote>
+
+            <p>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                is a markup language.
+            </p>
+
+            <p>
+                <dfn>HTML</dfn> is used to create the structure of web pages.
+            </p>
+
+        </article>
+
+
+        <!-- Block Inline -->
+
+        <article>
+
+            <h3>9. Block and Inline Elements</h3>
+
+            <p>
+                Block elements normally start on a new line.
+            </p>
+
+            <div class="example-box">
+                This is a block element.
+            </div>
+
+            <p>
+                Inline elements stay within the same line.
+                For example, <span class="highlight">this is a span element</span>.
+            </p>
+
+        </article>
+
+
+        <!-- Links -->
+
+        <article>
+
+            <h3>10. Anchors and Links</h3>
+
+            <p>
+                The anchor tag is used to create hyperlinks.
+            </p>
+
+            <a href="https://www.example.com" target="_blank">
+                Absolute URL Example
+            </a>
+
+            <br><br>
+
+            <a href="#home">
+                Relative / Internal Link Example
+            </a>
+
+        </article>
+
+
+        <!-- Images -->
+
+        <article>
+
+            <h3>11. Images</h3>
+
+            <p>
+                The image tag is used to display images on a webpage.
+            </p>
+
+            <img
+                src="https://via.placeholder.com/500x200"
+                alt="Example image"
+            >
+
+            <p>
+                Important image attributes include
+                <code>src</code> and <code>alt</code>.
+            </p>
+
+        </article>
+
+
+        <!-- Lists -->
+
+        <article>
+
+            <h3>12. Lists</h3>
+
+            <h4>Unordered List</h4>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h4>Ordered List</h4>
+
+            <ol>
+                <li>Create HTML structure</li>
+                <li>Add CSS</li>
+                <li>Test the webpage</li>
+            </ol>
+
+        </article>
+
+
+        <!-- Tables -->
+
+        <article>
+
+            <h3>13. HTML Tables</h3>
+
+            <p>
+                Tables are used to represent information in rows and columns.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th colspan="2">Web Technology Topics</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Unit 1</td>
+                    <td>HTML</td>
+                </tr>
+
+                <tr>
+                    <td>HTML5</td>
+                </tr>
+
+                <tr>
+                    <td>Unit 2</td>
+                    <td>CSS</td>
+                </tr>
+
+            </table>
+
+            <p>
+                <code>colspan</code> combines columns,
+                while <code>rowspan</code> combines rows.
+            </p>
+
+        </article>
+
+
+        <!-- Iframe -->
+
+        <article>
+
+            <h3>14. Iframe</h3>
+
+            <p>
+                An iframe is used to display another webpage or resource
+                inside the current webpage.
+            </p>
+
+            <iframe
+                src="https://www.example.com"
+                width="100%"
+                height="200"
+                title="Example iframe">
+            </iframe>
+
+            <p>
+                Common iframe attributes include
+                <code>src</code>, <code>width</code>,
+                <code>height</code> and <code>title</code>.
+            </p>
+
+        </article>
+
+
+        <!-- Forms -->
+
+        <article>
+
+            <h3>15. HTML Forms</h3>
+
+            <p>
+                Forms are used to collect information from users.
+            </p>
+
+            <h4>POST Form</h4>
+
+            <form action="#" method="post">
+
+                <label>Name:</label>
+                <input type="text" name="name">
+
+                <label>Email:</label>
+                <input type="email" name="email">
+
+                <label>Password:</label>
+                <input type="password" name="password">
+
+                <label>Number:</label>
+                <input type="number" name="number">
+
+                <label>Date:</label>
+                <input type="date" name="date">
+
+                <label>Color:</label>
+                <input type="color" name="color">
+
+                <label>File:</label>
+                <input type="file" name="file">
+
+                <label>Range:</label>
+                <input type="range" name="range">
+
+                <label>Search:</label>
+                <input type="search" name="search">
+
+                <label>URL:</label>
+                <input type="url" name="url">
+
+
+                <p>Learning Mode:</p>
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="online"
+                >
+                Online
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="offline"
+                >
+                Offline
+
+
+                <p>Topics:</p>
+
+                <input
+                    type="checkbox"
+                    name="html"
+                >
+                HTML
+
+                <input
+                    type="checkbox"
+                    name="css"
+                >
+                CSS
+
+
+                <label>Course Topic:</label>
+
+                <select name="topic">
+
+                    <optgroup label="Unit 1">
+                        <option>HTML</option>
+                        <option>HTML5</option>
+                        <option>Forms</option>
+                    </optgroup>
+
+                    <optgroup label="Unit 2">
+                        <option>CSS</option>
+                        <option>Box Model</option>
+                    </optgroup>
+
+                </select>
+
+
+                <label>Comments:</label>
+
+                <textarea
+                    rows="4"
+                    cols="40">
+                </textarea>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </article>
+
+
+        <!-- GET POST -->
+
+        <article>
+
+            <h3>16. GET vs POST</h3>
+
+            <table>
+
+                <tr>
+                    <th>GET</th>
+                    <th>POST</th>
+                </tr>
+
+                <tr>
+                    <td>Data is commonly visible in URL</td>
+                    <td>Data is sent in request body</td>
+                </tr>
+
+                <tr>
+                    <td>Used for retrieving data</td>
+                    <td>Commonly used for submitting data</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- HTML5 Semantic -->
+
+        <article>
+
+            <h3>17. HTML5 Semantic Elements</h3>
+
+            <p>
+                Semantic elements describe the purpose of their content.
+            </p>
+
+            <ul>
+                <li><code>&lt;header&gt;</code></li>
+                <li><code>&lt;nav&gt;</code></li>
+                <li><code>&lt;section&gt;</code></li>
+                <li><code>&lt;article&gt;</code></li>
+                <li><code>&lt;footer&gt;</code></li>
+            </ul>
+
+        </article>
+
+
+        <!-- Video -->
+
+        <article>
+
+            <h3>18. HTML5 Video</h3>
+
+            <p>
+                The video element is used to display video content.
+            </p>
+
+            <video controls width="100%">
+
+                <source
+                    src="course-video.mp4"
+                    type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+            <p>
+                Common attributes include
+                <code>controls</code>, <code>autoplay</code>,
+                <code>muted</code>, <code>loop</code> and
+                <code>poster</code>.
+            </p>
+
+        </article>
+
+
+        <!-- Audio -->
+
+        <article>
+
+            <h3>19. HTML5 Audio</h3>
+
+            <p>
+                The audio element is used to play audio content.
+            </p>
+
+            <audio controls>
+
+                <source
+                    src="course-audio.mp3"
+                    type="audio/mpeg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+            <p>
+                Common audio attributes include
+                <code>controls</code>, <code>autoplay</code>,
+                <code>muted</code> and <code>loop</code>.
+            </p>
+
+        </article>
+
+
+        <!-- Canvas -->
+
+        <article>
+
+            <h3>20. HTML5 Canvas</h3>
+
+            <p>
+                Canvas provides an area where graphics can be drawn
+                using JavaScript.
+            </p>
+
+            <canvas
+                id="myCanvas"
+                width="300"
+                height="120">
+            </canvas>
+
+            <script>
+
+                let canvas = document.getElementById("myCanvas");
+                let ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "lightblue";
+                ctx.fillRect(20, 20, 250, 70);
+
+                ctx.fillStyle = "black";
+                ctx.font = "20px Arial";
+                ctx.fillText("HTML5 Canvas", 65, 65);
+
+            </script>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= UNIT 2 ================= -->
+
+    <section id="unit2" class="container">
+
+        <h2>Unit 2 - CSS Core and Box Model</h2>
+
+
+        <!-- CSS Types -->
+
+        <article id="css">
+
+            <h3>1. Types of CSS</h3>
+
+            <p>
+                CSS can be applied to HTML using three main methods:
+                Inline, Internal and External CSS.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th>Type</th>
+                    <th>Where Used</th>
+                    <th>Example</th>
+                </tr>
+
+                <tr>
+                    <td>Inline</td>
+                    <td>Inside HTML element</td>
+                    <td><code>style="color:red"</code></td>
+                </tr>
+
+                <tr>
+                    <td>Internal</td>
+                    <td>Inside &lt;style&gt;</td>
+                    <td><code>&lt;style&gt;</code></td>
+                </tr>
+
+                <tr>
+                    <td>External</td>
+                    <td>Separate CSS file</td>
+                    <td><code>style.css</code></td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- Selectors -->
+
+        <article>
+
+            <h3>2. CSS Selectors</h3>
+
+            <ul>
+
+                <li>
+                    <strong>Element Selector:</strong>
+                    <code>p { }</code>
+                </li>
+
+                <li>
+                    <strong>Class Selector:</strong>
+                    <code>.box { }</code>
+                </li>
+
+                <li>
+                    <strong>ID Selector:</strong>
+                    <code>#header { }</code>
+                </li>
+
+                <li>
+                    <strong>Universal Selector:</strong>
+                    <code>* { }</code>
+                </li>
+
+                <li>
+                    <strong>Grouping Selector:</strong>
+                    <code>h1, h2 { }</code>
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <!-- CSS Properties -->
+
+        <article>
+
+            <h3>3. Important CSS Properties</h3>
+
+            <table>
+
+                <tr>
+                    <th>Category</th>
+                    <th>Properties</th>
+                </tr>
+
+                <tr>
+                    <td>Background</td>
+                    <td>background-color, background-image</td>
+                </tr>
+
+                <tr>
+                    <td>Text</td>
+                    <td>color, text-align, text-decoration</td>
+                </tr>
+
+                <tr>
+                    <td>Fonts</td>
+                    <td>font-family, font-size, font-weight</td>
+                </tr>
+
+                <tr>
+                    <td>Lists</td>
+                    <td>list-style-type</td>
+                </tr>
+
+                <tr>
+                    <td>Borders</td>
+                    <td>border, border-radius</td>
+                </tr>
+
+                <tr>
+                    <td>Spacing</td>
+                    <td>margin, padding</td>
+                </tr>
+
+                <tr>
+                    <td>Display</td>
+                    <td>block, inline, inline-block, none</td>
+                </tr>
+
+                <tr>
+                    <td>Visibility</td>
+                    <td>visible, hidden</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- Box Model -->
+
+        <article>
+
+            <h3>4. CSS Box Model</h3>
+
+            <p>
+                Every HTML element can be represented as a box.
+                The CSS box model contains four parts:
+            </p>
+
+            <div class="box-model">
+
+                <div class="box-border">
+
+                    Border
+
+                    <div class="box-padding">
+
+                        Padding
+
+                        <div class="box-content">
+                            Content
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul>
+                <li>Content - actual content of the element</li>
+                <li>Padding - space around the content</li>
+                <li>Border - line surrounding the padding</li>
+                <li>Margin - space outside the border</li>
+            </ul>
+
+            <h4>Width Calculation</h4>
+
+            <p>
+                Total Width =
+                Content Width + Left Padding + Right Padding +
+                Left Border + Right Border +
+                Left Margin + Right Margin
+            </p>
+
+            <h4>Height Calculation</h4>
+
+            <p>
+                Total Height =
+                Content Height + Top Padding + Bottom Padding +
+                Top Border + Bottom Border +
+                Top Margin + Bottom Margin
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= EXAMPLES ================= -->
+
+    <section id="examples" class="container">
+
+        <h2>Quick Examples</h2>
+
+        <article>
+
+            <h3>HTML Example</h3>
+
+            <pre>
+&lt;h1&gt;Web Technology&lt;/h1&gt;
+&lt;p&gt;Learning HTML and CSS&lt;/p&gt;
+            </pre>
+
+        </article>
+
+
+        <article>
+
+            <h3>CSS Example</h3>
+
+            <pre>
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+            </pre>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Web Technology Course
+        </p>
+
+        <p>
+            HTML &amp; CSS Study Material
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
